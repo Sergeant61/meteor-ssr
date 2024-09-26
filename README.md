@@ -10,7 +10,7 @@ Now, you can render Blaze templates on the server very easily. And also, you can
 ### Installation
 
 ```bash
-meteor add meteorhacks:ssr
+meteor add receptim:ssr
 ```
 
 ## Usage
@@ -70,14 +70,6 @@ You can render a template with data. For `template` argument you can either pass
 
 #### SSR.compileTemplate(templateName, stringTemplateContent, [options])
 You can use this API to compile templates in the server. The `options` parameter allows you to choose the template language with the `language` option. 
-
-If not provided this default to `html` which is handled by the spacebars compiler. 
-You can also use `jade` as another option — and in this case you need to add following package:
-~~~
-meteor add mquandalle:jade
-~~~
-
-Note: the order in which you add jade and SSR matters! First add jade as a dependency and then SSR, otherwise the jade-compiler can not be located by Meteor.
 
 ## What can we do with SSR
 
